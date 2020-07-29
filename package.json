@@ -1,7 +1,7 @@
 {
-  "name": "Smashing",
+  "name": "LuniNuxt",
   "version": "1.0.0",
-  "description": "My posh Nuxt.js project",
+  "description": "Projet multi page qui liste mes projets de GitHub",
   "author": "Lunivers",
   "private": true,
   "scripts": {
