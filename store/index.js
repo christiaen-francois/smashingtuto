@@ -15,7 +15,7 @@ export const actions = {
         try{
 
             let GitHubProjetcts = await fetch(
-                'https://api.github.com/users/christiaen-francois/repos?page=1&per_page=100'
+                'https://api.github.com/users/christiaen-francois/repos?page=1&per_page=100&sort=asc'
             ).then(res => res.json())
 
             

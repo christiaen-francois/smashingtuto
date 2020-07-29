@@ -1,15 +1,14 @@
 <template>
   <div>
       <h1 class="title">
-        Projets
+        Projets GitHub
       </h1>
       <h2 class="subtitle">
-        Voici les projets qui sont sur mon GitHub.
+        Utilisation de l'API de GitHub pour récupérer mes repository publics.
       </h2>
 
       <div class="project" v-for="project in GitHubProjetcts" :key="project.id">
-          <h3><a :href="project.html_url" target="_blank">{{ project.name }}</a></h3>
-          <p class="infos"><span v-if="project.language" class="language">{{ project.language }}</p>
+          <h3><a :href="project.html_url" target="_blank">{{ project.name }}</a> <small>({{ project.language }})</small></h3>
           <p v-if="project.description">{{ project.description }}</p>
       </div>
   </div>
@@ -40,5 +39,8 @@ export default {
 }
 h3{
   margin-bottom: .5rem;
+}
+small{
+  font-weight: normal;
 }
 </style>

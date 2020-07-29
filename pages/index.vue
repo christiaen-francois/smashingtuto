@@ -1,9 +1,9 @@
 <template>
   <div>
       <h1 class="title">
-        LuniNuxt
+        GitLuni
       </h1>
-      <nuxt-link to="/projets" class="links">Projets GitHubs</nuxt-link>
+      <nuxt-link to="/projets" class="links">Projets GitHub</nuxt-link>
   </div>
 </template>
 
