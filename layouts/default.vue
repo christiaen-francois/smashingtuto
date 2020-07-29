@@ -40,10 +40,33 @@ html{
 }
 body {
   background: #fff;
-  min-height:calc(100vh - 3vw) ;
+  min-height:calc(100vh - (3vw * 2)) ;
   border-bottom-right-radius: 30px;
   box-shadow: 0 0 30px rgba(0,0,0,.2);
   padding: 3vw;
+}
+
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
 }
 
 </style>
