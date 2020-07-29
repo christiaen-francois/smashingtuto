@@ -36,14 +36,14 @@ html {
 
 html{
   background: #092938;
-  padding: 3rem;
+  padding: 3vw;
 }
 body {
   background: #fff;
-  min-height:calc(100vh - 6rem) ;
+  min-height:calc(100vh - 3vw) ;
   border-bottom-right-radius: 30px;
   box-shadow: 0 0 30px rgba(0,0,0,.2);
-  padding: 3rem;
+  padding: 3vw;
 }
 
 </style>

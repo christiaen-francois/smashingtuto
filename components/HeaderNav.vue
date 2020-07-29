@@ -1,7 +1,8 @@
 <template>
   <div class="container">
       <div>
-        <Logo />
+        <nuxt-link to="/">
+        <Logo /></nuxt-link>
       </div>
   </div>
 </template>
