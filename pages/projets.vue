@@ -9,7 +9,7 @@
 
       <div class="project" v-for="project in GitHubProjetcts" :key="project.id">
           <h3><a :href="project.html_url" target="_blank">{{ project.name }}</a></h3>
-          <p class="infos"><span v-if="project.language" class="language">{{ project.language }} - </span> <span class="date">{{ project.updated_at }}</span></p>
+          <p class="infos"><span v-if="project.language" class="language">{{ project.language }}</p>
           <p v-if="project.description">{{ project.description }}</p>
       </div>
   </div>

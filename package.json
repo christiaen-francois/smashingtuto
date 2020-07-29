@@ -1,5 +1,5 @@
 {
-  "name": "LuniNuxt",
+  "name": "GitLuni",
   "version": "1.0.0",
   "description": "Projet multi page qui liste mes projets de GitHub",
   "author": "Lunivers",
@@ -11,8 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.3.6"
+    "@nuxtjs/axios": "^5.3.6",
+    "moment": "^2.27.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {}
 }

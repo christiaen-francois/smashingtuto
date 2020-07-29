@@ -17,17 +17,17 @@ export const actions = {
             let GitHubProjetcts = await fetch(
                 'https://api.github.com/users/christiaen-francois/repos?page=1&per_page=100'
             ).then(res => res.json())
+
+            
             
             // filter pour ne pas afficher les projets forkés
-            GitHubProjetcts = GitHubProjetcts
-            .filter(el => el.fork === false)
-            .map(({
+            GitHubProjetcts = GitHubProjetcts.filter(el => el.fork === false).map(({
                 id, name, description, html_url, updated_at, language
             }) => ({
                 id, name, description, html_url, updated_at, language
             }))
 
-            console.log(GitHubProjetcts)
+            console.log(GitHubProjetcts);
             commit('updateGitHubProjetcts', GitHubProjetcts)
 
         }catch (err){
