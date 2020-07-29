@@ -29,7 +29,7 @@ export default {
   */
   plugins: [
     "~/plugins/projects.client.js",
-    "~/plugins/user.client.js"
+    "~/plugins/user.server.js"
   ],
   /*
   ** Nuxt.js dev-modules

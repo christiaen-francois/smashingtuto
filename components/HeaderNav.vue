@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 svg{
-    width:100px;
+    width:150px;
     height: auto;
     margin: 0 0 1.5rem 0;
 }
