@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <HeaderNav />
-    <nuxt />
+  <div class="container">
+    <div>
+      <HeaderNav />
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -62,11 +64,29 @@ body {
   font-size: 1.5rem;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 2rem;
+}
+
+.container{
+  text-align: center;
+  min-height:calc(100vh - (3vw * 4));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container > div{
+  width: 100%;
 }
 
 .links {
-  padding-top: 15px;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+a{
+  color:#e72776;
+  text-decoration: none;
 }
 
 </style>

@@ -1,9 +1,8 @@
 <template>
-  <div class="container">
-      <div>
-        <nuxt-link to="/">
-        <Logo /></nuxt-link>
-      </div>
+  <div>
+    <nuxt-link to="/">
+      <Logo />
+    </nuxt-link>
   </div>
 </template>
 
@@ -19,8 +18,9 @@ export default {
 
 <style scoped>
 svg{
-    width:200px;
+    width:100px;
     height: auto;
+    margin: 0 0 1.5rem 0;
 }
 .container {
   margin: 0 auto;

@@ -1,12 +1,9 @@
 <template>
-  <div class="container">
+  <div>
       <h1 class="title">
         LuniNuxt
       </h1>
-      <h2 class="subtitle">
-        Projets qui viennent de mon GIT
-      </h2>
-      <nuxt-link to="/projets">Projets GIT</nuxt-link>
+      <nuxt-link to="/projets" class="links">Projets GitHubs</nuxt-link>
   </div>
 </template>
 
@@ -18,7 +15,4 @@ export default {
 
 <style scoped>
 
-.container{
-  text-align: center;
-}
 </style>
