@@ -45,8 +45,7 @@ body {
   min-height:calc(100vh - (3vw * 2)) ;
   border-bottom-right-radius: 30px;
   box-shadow: 0 0 30px rgba(0,0,0,.2);
-  padding: 3vw;
-
+  padding: 70px 3vw;
   position: relative;
 }
 
@@ -66,7 +65,7 @@ body {
   font-size: 1.5rem;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .container{

@@ -43,7 +43,8 @@ svg{
   justify-content: center;
   align-items: center;
   font-size: .8rem;
-  color:#526488
+  color:#526488;
+  display: none;
 }
 .gitProfile img{
   width: 50px;

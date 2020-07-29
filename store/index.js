@@ -19,9 +19,8 @@ export const actions = {
         try{
 
             let GitHubProjetcts = await fetch(
-                'https://api.github.com/users/christiaen-francois/repos?page=1&per_page=100&sort=asc'
+                'https://api.github.com/users/christiaen-francois/repos?page=1&per_page=100&sort=updated'
             ).then(res => res.json())
-
             
             
             // filter pour ne pas afficher les projets forkés
