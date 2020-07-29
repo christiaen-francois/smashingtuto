@@ -1,10 +1,14 @@
 export const state = () => ({
-    GitHubProjetcts: []
+    GitHubProjetcts: [],
+    GitHubUser: [],
 })
 
 export const mutations = {
     updateGitHubProjetcts: (state, payload) => {
         state.GitHubProjetcts = payload
+    },
+    updateGitHubUser: (state, payload) => {
+        state.GitHubUser = payload
     }
 }
 
@@ -35,5 +39,21 @@ export const actions = {
         }
 
         
+    },
+    async getGitHubUser({ state, commit }) {
+        if(state.GitHubUser.length) return
+
+        try{
+
+            let GitHubUser = await fetch(
+                'https://api.github.com/users/christiaen-francois'
+            ).then(res => res.json())
+
+            console.log(GitHubUser);
+            commit('updateGitHubUser', GitHubUser)
+
+        }catch (err){
+            console.log(err)
+        }
     }
 }

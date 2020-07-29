@@ -110,12 +110,25 @@ ZzRby3p+n/N/r8Ph8fX1/p8u428Y28Y28Y2sY2sY2sY2sY2cY2cY2PAbHgNjwH3+A+/wH3eA+7wH
 YhvYhvYhvYhvYhvYhvYhvYhvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYR3/d6f8AIbuM
 f//Z" transform="matrix(1.1072 0 0 1.1055 -107.2347 -168.9922)">
 			</image>
+
+			<image :xlink:href="GitHubUser.avatar_url" x="-30" y="-30" height="260" width="260" /> 
 		</g>
 	</g>
 </g>
 </svg>
 
 </template>
+
+<script>
+import { mapState } from "vuex"
+
+export default {
+    computed: {
+        ...mapState(["GitHubUser"])
+    }
+}
+</script>
+
 <style>
 .NuxtLogo {
   animation: 1s appear;
